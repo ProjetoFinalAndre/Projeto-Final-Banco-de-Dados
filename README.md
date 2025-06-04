@@ -6,7 +6,7 @@ Este repositório contém o projeto final da disciplina de Banco de Dados Relaci
 
 ## Integrantes do Grupo 🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️
 
-- Felipe Cutiur
+- Felipe Cutiur do Santos
 - Jose Eduardo de Oliveira Junior
 - Joacir Peçanha Moreira Filho
 - Kelvim Lucas de Paula
