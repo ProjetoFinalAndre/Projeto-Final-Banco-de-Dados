@@ -28,10 +28,6 @@ Descrição geral das entidades envolvidas e seus relacionamentos.
 
 ![DER](https://github.com/ProjetoFinalBancodeDados/Projeto-Final-Banco-de-Dados-Relacional-2025-/blob/dev/docs/modelagem_trabalho_final.png)
 
-### Modelo Lógico
-
-![logico]()
-
 ## Normalização
 
 O banco de dados foi normalizado até a **Terceira Forma Normal (3NF)**.
