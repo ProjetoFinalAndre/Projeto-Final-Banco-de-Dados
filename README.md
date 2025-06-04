@@ -6,7 +6,7 @@ Este repositório contém o projeto final da disciplina de Banco de Dados Relaci
 
 ## Integrantes do Grupo 🧍‍♂️🧍‍♂️🧍‍♂️🧍‍♂️
 
-- Felipe Cutiur
+- Felipe Cutiur do Santos
 - Jose Eduardo de Oliveira Junior
 - Joacir Peçanha Moreira Filho
 - Kelvim Lucas de Paula
@@ -26,11 +26,7 @@ Descrição geral das entidades envolvidas e seus relacionamentos.
 
 ### Diagrama Entidade-Relacionamento (DER)
 
-![DER](https://github.com/KeLLucas/Projeto-Final-Banco-de-Dados-Relacional-2025/blob/develop/docs/modelagem_trabalho_final.png)
-
-### Modelo Lógico
-
-![logico]()
+![DER](https://github.com/ProjetoFinalBancodeDados/Projeto-Final-Banco-de-Dados-Relacional-2025-/blob/dev/docs/modelagem_trabalho_final.png)
 
 ## Normalização
 
