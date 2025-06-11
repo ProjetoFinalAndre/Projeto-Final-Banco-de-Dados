@@ -39,20 +39,14 @@ O banco de dados foi normalizado até a **Terceira Forma Normal (3NF)**.
 - Não há grupos de atributos repetidos (há apenas um dado por coluna nas linhas).
 - Existe uma chave primária.
 - Relação não possui atributos multivalorados ou relações aninhadas.
-<br></br>
-**EXEMPLO:**
 
 ### Segunda Forma Normal - 2FN
 - Está na 1FN.
 - Não contém dependências parciais.
-<br></br>
-**EXEMPLO:**
-  
+
 ### Terceira Forma Normal - 3FN
 - Está na 2FN.
 - Não contém dependências transitiva (A relação não deve ter um atributo não-chave funcionalmente determinado por um outro atributo não-chave.
-<br></br>
-**EXEMPLO:**
 
 ## Scripts SQL
 
@@ -98,7 +92,7 @@ Todos os scripts estão localizados na pasta `/sql`.
 A documentação completa está disponível na pasta `/documentacao`, estruturada conforme as normas da ABNT, contendo:
 
 - Introdução
-- Modelagem conceitual e lógica
+- Modelagem conceitual
 - Scripts comentados
 - Conclusão e referências
 
