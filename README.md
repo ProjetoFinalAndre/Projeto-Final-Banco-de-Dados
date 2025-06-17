@@ -16,7 +16,7 @@ Este repositório contém o projeto final da disciplina de Banco de Dados Relaci
 > Sistema Hospitalar ⚕️
 
 O principal objetivo deste sistema é adiquirir um maior controle no processos hospitalares, como seus profissionais, pacientes, exames e medicamentos. Ajudando em manter um histórico detalhado do que foi feito, tomar as melhores decisões, apoio aos profissionais e diminuição erros.<br>
-Esse projeto testará o conhecimento que os integrantes do grupo adiquiriram no primeiro semestre na matéria de **Banco de Dados**, colocando-os em prática neste projeto, deste a elaboração do **Diagrama de Entidade-Relacional (DER) até a criação de _views_ no banco de dados.
+Esse projeto testará o conhecimento que os integrantes do grupo adiquiriram no primeiro semestre na matéria de **Banco de Dados**, colocando-os em prática neste projeto, deste a elaboração do **Diagrama de Entidade-Relacional (DER)** até a criação de _views_ no banco de dados.
 
 ## Modelagem de Dados 
 
@@ -30,11 +30,23 @@ Descrição geral das entidades envolvidas e seus relacionamentos.
 
 ## Normalização
 
+Normalização é o processo de organização de dados em um banco de dados. Isso inclui a criação de tabelas e o estabelecimento de relações entre essas tabelas de acordo com as regras projetadas para proteger os dados e tornar o banco de dados mais flexível, eliminando a redundância e a dependência inconsistente.
+
 O banco de dados foi normalizado até a **Terceira Forma Normal (3NF)**.
 
-- Justificativas das formas normais aplicadas
-- Exemplos de como a normalização foi implementada
+### Primeira Forma Normal - 1FN
+- Somente possui valores atômicos.
+- Não há grupos de atributos repetidos (há apenas um dado por coluna nas linhas).
+- Existe uma chave primária.
+- Relação não possui atributos multivalorados ou relações aninhadas.
 
+### Segunda Forma Normal - 2FN
+- Está na 1FN.
+- Não contém dependências parciais.
+
+### Terceira Forma Normal - 3FN
+- Está na 2FN.
+- Não contém dependências transitiva (A relação não deve ter um atributo não-chave funcionalmente determinado por um outro atributo não-chave.
 
 ## Scripts SQL
 
@@ -80,7 +92,7 @@ Todos os scripts estão localizados na pasta `/sql`.
 A documentação completa está disponível na pasta `/documentacao`, estruturada conforme as normas da ABNT, contendo:
 
 - Introdução
-- Modelagem conceitual e lógica
+- Modelagem conceitual
 - Scripts comentados
 - Conclusão e referências
 
@@ -92,4 +104,4 @@ A documentação completa está disponível na pasta `/documentacao`, estruturad
 - **SGBD utilizado**: PostgreSQL.
 - **Versão recomendada**: PostgreSQL 15+
 - **Ferramentas utilizadas**:
-  - BrModelo, PgAdmin,
+  - BrModelo, PgAdmin, VsCode.
