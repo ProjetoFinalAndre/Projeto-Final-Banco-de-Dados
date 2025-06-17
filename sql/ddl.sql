@@ -55,7 +55,11 @@ CREATE TABLE medicamentos (
 CREATE TABLE endereco (
 	id SERIAL PRIMARY KEY,
 	cep VARCHAR(9),
-	logradouro VARCHAR(100)
+	logradouro VARCHAR(100),
+	cidade VARCHAR(100),
+	bairro VARCHAR(100),
+	estado VARCHAR(100),
+    numero INTEGER
 );
 
 CREATE TABLE telefone (
