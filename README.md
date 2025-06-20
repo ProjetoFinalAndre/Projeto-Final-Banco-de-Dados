@@ -26,7 +26,7 @@ Descrição geral das entidades envolvidas e seus relacionamentos.
 
 ### Diagrama Entidade-Relacionamento (DER)
 
-![DER]()
+![DER](https://github.com/ProjetoFinalAndre/Projeto-Final-Banco-de-Dados-Relacional-2025-/blob/main/docs/modelagem_trabalho_final_BD.png)
 
 ## Normalização
 
