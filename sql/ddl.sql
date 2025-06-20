@@ -1,4 +1,4 @@
------------------------------- DDL ------------------------------
+-- ------------------------------ DDL ------------------------------
 CREATE TABLE funcionarios (
 	id SERIAL PRIMARY KEY,
 	nome VARCHAR(100),
@@ -53,23 +53,14 @@ CREATE TABLE medicamentos (
 	posologia VARCHAR(100)
 );
 
-CREATE TABLE consulta (
-	id SERIAL PRIMARY KEY,
-	id_funcionario INTEGER,
-	id_encaminhamento INTEGER,
-	id_exames INTEGER,
-	id_medicamentos INTEGER,
-	doenca VARCHAR(100),
-	sintomas VARCHAR(100),
-	FOREIGN KEY (id_funcionario) REFERENCES funcionarios(id) ON DELETE CASCADE,
-	FOREIGN KEY (id_encaminhamento) REFERENCES encaminhamento(id) ON DELETE CASCADE,
-	FOREIGN KEY (id_exames) REFERENCES exames(id) ON DELETE CASCADE,
-	FOREIGN KEY (id_medicamentos) REFERENCES medicamentos(id) ON DELETE CASCADE
-);
-
 CREATE TABLE endereco (
 	id SERIAL PRIMARY KEY,
-	email VARCHAR(100)
+	cep VARCHAR(9),
+	logradouro VARCHAR(100),
+	cidade VARCHAR(100),
+	bairro VARCHAR(100),
+	estado VARCHAR(100),
+	numero INTEGER
 );
 
 CREATE TABLE telefone (
@@ -84,7 +75,23 @@ CREATE TABLE pacientes (
 	id_telefone INTEGER,
 	nome VARCHAR(100),
 	idade INTEGER,
-	sexo CHAR(1),
+	sexo CHAR(1) CHECK (sexo IN('M', 'F')),
 	FOREIGN KEY (id_endereco) REFERENCES endereco(id) ON DELETE CASCADE,
 	FOREIGN KEY (id_telefone) REFERENCES telefone(id) ON DELETE CASCADE
+);
+
+CREATE TABLE consulta (
+	id SERIAL PRIMARY KEY,
+	id_funcionario INTEGER,
+	id_encaminhamento INTEGER,
+	id_exames INTEGER,
+	id_medicamentos INTEGER,
+	id_paciente INTEGER,
+	doenca VARCHAR(100),
+	sintomas VARCHAR(100),
+	FOREIGN KEY (id_funcionario) REFERENCES funcionarios(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_encaminhamento) REFERENCES encaminhamento(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_exames) REFERENCES exames(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_medicamentos) REFERENCES medicamentos(id) ON DELETE CASCADE,
+	FOREIGN KEY (id_paciente) REFERENCES pacientes(id) ON DELETE CASCADE
 );
