@@ -1,4 +1,3 @@
--- ------------------------------ DML ------------------------------
 INSERT INTO funcionarios (nome, cargo) VALUES 
 ('Paula Menezes', 'Médico'),
 ('Rafael Torres', 'Técnico de Enfermagem'),
@@ -12,7 +11,6 @@ INSERT INTO funcionarios (nome, cargo) VALUES
 ('Kelvin Lucas', 'Médico'),
 ('Patricia Silva', 'Enfermeiro'),
 ('Marina Souza', 'Médico'),
-('Beatriz Oliveira', NULL),
 ('Rafaela Lima', 'Enfermeiro'),
 ('Rafael Pecoraci', 'Médico'),
 ('Paola Gomes', 'Enfermeiro'),
@@ -59,7 +57,6 @@ INSERT INTO pacientes (id_endereco, id_telefone, nome, idade, sexo) VALUES
 (2, 2, 'Joana Lima', 52, 'F'),
 (3, 3, 'Mário Oliveira', 65, 'M'),
 (4, 4, 'Renata Pires', 40, 'F'),
-(1, 1, 'Gabriel Ribeiro', 16, 'M');
 
 INSERT INTO encaminhamento (data, destino) VALUES
 ('2025-06-04', 'Cardiologia'),
@@ -83,4 +80,6 @@ INSERT INTO consulta (id_funcionario, id_paciente, id_encaminhamento, id_exames,
 (1, 1, 1, 1, 1, 'Hipertensão', 'Tontura, dor de cabeça'),
 (4, 2, 2, 2, 2, 'Micose de pele', 'Coceira, vermelhidão'),
 (7, 3, 3, 3, 3, 'Infecção respiratória', 'Tosse, febre'),
-(10, 4, 4, 4, 4, 'Traumatismo craniano leve', 'Confusão, dor de cabeça');
+(10, 4, 4, 4, 4, 'Traumatismo craniano leve', 'Confusão, dor de cabeça');
+
+
