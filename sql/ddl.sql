@@ -1,4 +1,4 @@
------------------------------- DDL ------------------------------
+-- ------------------------------ DDL ------------------------------
 CREATE TABLE funcionarios (
 	id SERIAL PRIMARY KEY,
 	nome VARCHAR(100),
@@ -8,6 +8,7 @@ CREATE TABLE funcionarios (
 CREATE TABLE tecnicos (
 	id SERIAL PRIMARY KEY,
 	id_funcionario INTEGER,
+	nome VARCHAR(100),
 	idade INTEGER,
 	especialidade VARCHAR(100),
 	crtr INTEGER,
@@ -17,6 +18,7 @@ CREATE TABLE tecnicos (
 CREATE TABLE medicos (
 	id SERIAL PRIMARY KEY,
 	id_funcionario INTEGER,
+	nome VARCHAR(100),
 	idade INTEGER,
 	especialidade VARCHAR(100),
 	crm INTEGER,
@@ -26,6 +28,7 @@ CREATE TABLE medicos (
 CREATE TABLE enfermeiros (
 	id SERIAL PRIMARY KEY,
 	id_funcionario INTEGER,
+	nome VARCHAR(100),
 	idade INTEGER,
 	coren INTEGER,
 	FOREIGN KEY (id_funcionario) REFERENCES funcionarios(id) ON DELETE CASCADE
@@ -50,8 +53,6 @@ CREATE TABLE medicamentos (
 	posologia VARCHAR(100)
 );
 
-
-
 CREATE TABLE endereco (
 	id SERIAL PRIMARY KEY,
 	cep VARCHAR(9),
@@ -59,7 +60,7 @@ CREATE TABLE endereco (
 	cidade VARCHAR(100),
 	bairro VARCHAR(100),
 	estado VARCHAR(100),
-    numero INTEGER
+	numero INTEGER
 );
 
 CREATE TABLE telefone (
